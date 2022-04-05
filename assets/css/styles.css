@@ -1,0 +1,203 @@
+/* NAVBAR */
+.navbar-brand {
+  font-family: "Lobster", cursive;
+}
+.links {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+}
+
+.container a {
+  color: #fff;
+}
+.barra {
+  font-size: 2rem;
+}
+.nav-item a {
+  color: #fff !important;
+}
+
+
+.linea-larga {
+  border-top: 2px solid #373a3c;
+  height: 2px;
+  
+  margin: 2rem 15rem 0 15rem;
+}
+/* CARD */
+.card {
+  max-width: 1040px;
+  margin-top: 100px;
+  border: none;
+  margin: auto;
+}
+.card-title,
+.titulos-receta {
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+}
+.card-text {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  
+}
+.linea-corta {
+  border-top: 2px solid #373a3c;
+  height: 3px;
+  max-width: 100%;
+  padding: 0;
+  margin: 0 auto 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-title,
+  .texto,
+  .botones {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card-body, .botones {
+    justify-content: center !important;
+  }
+}
+
+/* CARROUSEL */
+.carousel {
+  margin: auto;
+  max-width: 1040px;
+}
+.carousel-inner div img {
+  width: 250px;
+  height: 160px;
+}
+.margen {
+  margin-right: 8px;
+}
+.carousel-inner {
+  display: inline-flex;
+}
+
+/*INGREDIENTES Y PREPARACION*/
+.container {
+  text-align: justify;
+}
+.titulos-receta {
+  padding-left: 35px;
+  margin-bottom: 35px;
+  margin-top: 35px;
+  text-decoration: underline;
+  text-decoration-color: rgb(39, 39, 39);
+}
+.ingredientes h5 {
+  padding-left: 35px;
+  margin-bottom: 35px;
+  text-decoration: underline;
+  text-decoration-color: rgb(39, 39, 39);
+}
+@media only screen and (max-width: 600px) {
+  .titulos-receta,
+  .ingredientes h5 {
+    text-decoration: none;
+  }
+}
+.ingredientes p {
+  padding-left: 35px;
+}
+.ingredientes ul,
+ol {
+  padding-left: 35px;
+}
+.texto-ingredientes {
+  list-style-type: none;
+}
+.texto-preparacion {
+  padding: 0 2.5rem 0 2.5rem;
+}
+.receta h5 {
+  margin-bottom: 35px;
+  text-decoration: underline;
+  text-decoration-color: rgb(39, 39, 39);
+}
+.receta ul li {
+  padding-left: 0% !important;
+}
+
+/* CARD DECK */
+.card-deck {
+  justify-content: center;
+}
+.border {
+  color: #373a3c;
+}
+.card-size {
+  max-width: 23rem;
+}
+.texto-platos {
+  text-align: left;
+}
+.relacionadas h2{
+    text-align: center;
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+  .texto-movil {
+    text-align: left;
+  }
+}
+
+/* NEWSLETTER */
+.newsletter{
+    background-color: #dc3545;
+    height: 100%;    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.letras-titulo{
+    color: #fff;
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    padding-top: 8rem;
+}
+.letras-texto1{
+    color: #fff;
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.marca{
+    color: #fff;
+    font-family: "Lobster", cursive;
+    font-size: 2rem;
+}
+.boton{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30%;
+}
+.boton button{
+    width: 270px;
+}
+@media only screen and (max-width: 600px){
+    .letras-titulo, .letras-texto1{
+        text-align: center;
+    }
+}
+
+/* FOOTER */
+footer {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  height: 100px;
+  text-align: center;
+}
+footer p {
+  color: #fff;
+  padding-top: 25px;
+}

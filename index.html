@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Ricomida</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand barra" href="#">Ricomida</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse links" id="navbarNav">
+          <ul class="navbar-nav ml-auto color-texto-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#recetas">Recetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="card mb-3 mt-50px pt-2">
+      <div class="row no-gutters">
+        <div class="col">
+          <img
+            src="./assets/img/principal.jpg"
+            alt=" Foto de Pizza"
+            width="520px"
+            height="410px"
+          />
+        </div>
+        <div class="col">
+          <div class="card-body">
+            <h1 class="card-title">
+              PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES
+            </h1>
+            <div class="linea-corta"></div>
+            <h5 class="card-text texto">110 MIN / 6 A 8 PORCIONES</h5>
+          </div>
+          <div class="d-flex flex-box botones">
+            <button
+              type="button"
+              class="btn btn-outline-secondary mr-3 mx-lg-3"
+              data-container="body"
+              data-toggle="popover"
+              data-trigger="hover"
+              data-placement="bottom"
+              data-content="Enviar por Correo."
+            >
+              Enviar por correo
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-trigger="hover"
+              data-placement="bottom"
+              data-content="Enviar por Correo."
+            >
+              Añadir a favoritos
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide d-none d-lg-block"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner d-flex">
+        <div class="carousel-item active">
+          <img
+            src="./assets/img/slider-1.png"
+            class="margen flex-fill"
+            alt="..."
+          />
+          <img
+            src="./assets/img/slider-2.png"
+            class="margen flex-fill"
+            alt="..."
+          />
+          <img
+            src="./assets/img/slider-3.png"
+            class="margen flex-fill"
+            alt="..."
+          />
+          <img src="./assets/img/slider-4.png" class="flex-fill" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/img/slider-5.png"
+            class="margen flex-fill"
+            alt="..."
+          />
+          <img
+            src="./assets/img/slider-6.png"
+            class="margen flex-fill"
+            alt="..."
+          />
+          <img
+            src="./assets/img/slider-7.png"
+            class="margen flex-fill"
+            alt="..."
+          />
+          <img src="./assets/img/slider-8.png" class="flex-fill" alt="..." />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+    <div class="linea-larga"></div>
+
+    <section>
+      <div class="container">
+        <div class="row row-col-2">
+          <div class="col-lg-6 ingredientes">
+            <h5 class="titulos-receta">INGREDIENTES</h5>
+            <p>Masa</p>
+            <ul class="texto-ingredientes">
+              <li>20 gr de levadura seca instantánea</li>
+              <li>1 cucharadita de azúcar</li>
+              <li>500 ml agua tibia</li>
+              <li>100 ml aceite vegetal</li>
+              <li>4 cucharadas de aceite de oliva</li>
+              <li>65 gr harina de maíz fina (chuchoca)</li>
+              <li>2 cucharaditas de sal</li>
+              <li>625 gr harina</li>
+            </ul>
+
+            <p>Salsa</p>
+            <ul class="texto-ingredientes">
+              <li>5 cucharadas de aceite de oliva</li>
+              <li>½ cebolla picada en cubos finos</li>
+              <li>2 cucharaditas de sal</li>
+              <li>3 cucharadas de Orégano Gourmet</li>
+              <li>1 ½ cucharadas de Albahaca Gourmet</li>
+              <li>2 tarro de tomates en cubos al natural</li>
+              <li>2 cucharaditas de azúcar</li>
+            </ul>
+
+            <p>Relleno</p>
+            <ul class="texto-ingredientes">
+              <li>½ cebolla, en cubos</li>
+              <li>500 gr hojas de espinacas picadas</li>
+              <li>400 gr de champiñones, laminados</li>
+              <li>300 gr de queso mozarella.</li>
+              <li>4 cucharadas queso parmesano</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h5 class="titulos-receta">PREPARACIÓN</h5>
+            <ol class="texto-preparacion">
+              <li class="text-lg-left mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Posuere morbi leo urna molestie at elementum eu. Purus ut
+                faucibus pulvinar elementum integer enim neque volutpat. Nisi
+                vitae suscipit tellus mauris. Consectetur purus ut faucibus
+                pulvinar. Ut eu sem integer vitae justo eget magna fermentum
+                iaculis. Posuere urna nec tincidunt praesent semper feugiat
+                nibh. Varius duis at consectetur lorem donec. Et netus et
+                malesuada fames ac turpis egestas integer eget. Adipiscing elit
+                ut aliquam purus sit amet luctus venenatis lectus. Lacus viverra
+                vitae congue eu consequat ac felis donec et. Enim nulla aliquet
+                porttitor lacus luctus accumsan tortor posuere.
+              </li>
+
+              <li class="text-lg-left mb-4">
+                Non nisi est sit amet facilisis magna. Condimentum lacinia quis
+                vel eros donec ac. Condimentum id venenatis a condimentum.
+                Pharetra sit amet aliquam id diam. Imperdiet proin fermentum leo
+                vel orci porta non pulvinar neque. Blandit libero volutpat sed
+                cras ornare arcu. Odio tempor orci dapibus ultrices in iaculis.
+                Venenatis urna cursus eget nunc scelerisque viverra. A erat nam
+                at lectus urna duis convallis. Mattis pellentesque id nibh
+                tortor id aliquet lectus. Etiam erat velit scelerisque in.
+              </li>
+
+              <li class="text-lg-left mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Explicabo, est id aliquid soluta nihil voluptate eum adipisci
+                sed! At, aut. Veniam neque aspernatur sapiente. Nulla
+                praesentium eos nihil dolor id.
+              </li>
+
+              <li class="text-lg-left mb-4">Calentar el horno a 220°C</li>
+
+              <li class="text-lg-left mb-4">
+                In mollis nunc sed id semper. In nulla posuere sollicitudin
+                aliquam. Rhoncus aenean vel elit scelerisque mauris pellentesque
+                pulvinar pellentesque. Ornare suspendisse sed nisi lacus sed.
+                Purus viverra accumsan in nisl nisi scelerisque eu ultrices.
+                Velit euismod in pellentesque massa placerat duis ultricies
+                lacus. Lacus luctus accumsan tortor posuere ac ut consequat
+                semper viverra. Ipsum suspendisse ultrices gravida dictum fusce
+                ut placerat orci.
+              </li>
+
+              <li class="text-lg-left mb-4">
+                Eu volutpat odio facilisis mauris sit amet. Amet mauris commodo
+                quis imperdiet massa tincidunt nunc. Aenean vel elit scelerisque
+                mauris pellentesque pulvinar. Quis lectus nulla at volutpat diam
+                ut venenatis. Et netus et malesuada fames ac turpis egestas
+                maecenas.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARD DECK -->
+    <section>
+      <div class="linea-larga"></div>
+      <div class="relacionadas pt-3">
+        <h2>RECETAS RELACIONADAS</h2>
+      </div>
+
+      <div class="card-deck">
+        <div class="card border mb-3 card-size">
+          <img
+            src="/assets/img/recipe-card-1.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title texto-platos">
+              PANQUEQUES CON <br />MANJAR Y CREMA
+            </h5>
+            <p class="card-text texto-movil">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+        </div>
+        <div class="card border mb-3 card-size">
+          <img
+            src="/assets/img/recipe-card-2.png"
+            class="card-img-top card-img"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title texto-platos">TIRAMISÚ</h5>
+            <p class="card-text texto-movil">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.Vulputate eu scelerisque
+              felis imperdiet proin fermentum.
+            </p>
+          </div>
+        </div>
+        <div class="card border mb-3 card-size">
+          <img
+            src="/assets/img/recipe-card-3.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title texto-platos">PLATEADA</h5>
+            <p class="card-text texto-movil">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.Vulputate eu scelerisque
+              felis imperdiet proin fermentum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section>
+      <div class="container-fluid newsletter">
+        <div class="row">
+          <div class="col">
+            <h1 class="letras-titulo">SUSCRÍBETE EN NUESTRO NEWSLETTER</h1>
+
+            <h4 class="letras-texto1">
+              y obtén las mejores recetas que tenemos en
+              <span class="marca">Ricomida</span>
+            </h4>
+
+            <div class="container boton">
+              <div class="row">
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-lg btn-outline-light mt-5"
+                  >
+                    Empezar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark ">
+        <div>
+           <p>Ricomida</p> 
+        </div>
+      
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </body>
+</html>
