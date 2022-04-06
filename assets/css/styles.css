@@ -7,7 +7,7 @@
   font-weight: 400;
 }
 
-.container a {
+nav a {
   color: #fff;
 }
 .barra {
@@ -16,6 +16,11 @@
 .nav-item a {
   color: #fff !important;
 }
+/* @media only screen and (max-width: 600px) {
+   button{
+     
+   }
+} */
 
 
 .linea-larga {
@@ -76,6 +81,15 @@
 }
 .carousel-inner {
   display: inline-flex;
+}
+.carousel .carousel-indicators li{
+  height: 20px !important;
+  width: 20px !important;
+  border-radius: 50%;
+  background-color: #373a3c31;
+}
+.carousel .carousel-indicators li.active{
+  background-color: #373a3c;
 }
 
 /*INGREDIENTES Y PREPARACION*/

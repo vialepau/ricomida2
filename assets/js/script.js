@@ -1,17 +1,37 @@
-$(function () {
-    $('[data-toggle="popover"]').popover({
-        container: 'body'
-    })
+$(document).ready(function () {
+  
+
+
+  $("#enviarCorreo").click(function () {
+    alert("El correo fue enviado correctamente...");
+  });
+
+  $(".texto-rojo").on("dblclick", function () {
+    $(this).css("color", "red");
+  });
+
+  $(".plato1").on('click', function(){
+    $(".detalle1").toggle("slow");   
   })
 
+  $(".plato2").on('click', function(){
+    $(".detalle2").toggle("slow");
+  })
 
+  $(".plato3").on('click', function(){
+    $(".detalle3").toggle("slow");
+  })
+});
+$("a").on("click", function (event) {
+  event.preventDefault();
 
-/*$(document).ready(function(){
+  var hash = this.hash;
 
-    $('.btnUno').popover({content: "Blabla", trigger: "hover"}); 
-    $('.btnDos').popover({content: "Blabla", trigger: "hover"}); 
+  $("html").animate(
+    {
+      scrollTop: $(hash).offset().top - 80,
+    },
+    1000
+  );
+});
     
-  });
-  $(".btnUno").on(function(){
-    $("[data-toggle='popover']").popover('toggle');
-  });*/
